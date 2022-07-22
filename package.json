@@ -4,13 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "http-server -c-1 dist/sitio-angular",
-    "build": "ng build",
+    "build": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "heroku-postbuild": "ng build --prod",
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "^14.0.6",
     "@angular/animations": "^14.0.6",
     "@angular/cli": "^14.0.6",
     "@angular/common": "^14.0.6",
